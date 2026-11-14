@@ -1,0 +1,1193 @@
+{
+  "families": [
+    "qwen",
+    "gemma",
+    "deepseek",
+    "glm",
+    "step",
+    "kimi",
+    "minimax",
+    "mimo",
+    "nemotron",
+    "ling",
+    "hunyuan",
+    "laguna",
+    "muse",
+    "mistral",
+    "inkling",
+    "ornith",
+    "lfm"
+  ],
+  "max_age_days": 240,
+  "models": {
+    "underdog-saluki-27b-1.0": {
+      "family": "qwen",
+      "name": "Underdog Saluki 27B 1.0",
+      "released": "2026-10-08",
+      "reasoning": true,
+      "vision": false,
+      "about": "ConwayResearch's mixed 2-bit GGUF quantization of Qwen3.8-27B, using GSQ-RCO weights and an importance matrix for tool calling. This recipe serves text; the optional vision projector is not included.",
+      "good_for": "Local chat, reasoning and tool calls on a 16 GB GPU",
+      "logo": "qwen",
+      "hf": "ConwayResearch/Underdog-Saluki-27B-1.0"
+    },
+    "qwen3.8-27b": {
+      "family": "qwen",
+      "name": "Qwen3.8-27B",
+      "released": "2026-08-05",
+      "reasoning": true,
+      "vision": true,
+      "about": "Alibaba's 27B dense model from August 2026, and the strongest model that fits one consumer card. It thinks before it answers, calls tools reliably and reads images, which makes it the default for coding agents and long projects.",
+      "good_for": "Coding agents, long documents, everyday assistant work",
+      "logo": "qwen",
+      "hf": "Qwen/Qwen3.8-27B",
+      "aa": {
+        "index": 27.6,
+        "name": "Qwen3.8 27B (Medium)",
+        "slug": "qwen3-8-27b-medium",
+        "estimated": false,
+        "at": "2026-10-05"
+      }
+    },
+    "qwen3.8-27b-pi": {
+      "family": "qwen",
+      "name": "Qwen3.8-27B-pi",
+      "released": "2026-09-29",
+      "reasoning": true,
+      "vision": true,
+      "about": "bytkim's Qwen3.8-27B fine-tune for the Pi coding-agent harness, trained with supervised fine-tuning and reinforcement learning. Supports low, medium and xhigh reasoning; the EXL3 build retains a 4-bit MTP head.",
+      "good_for": "Pi coding agents, tool use and long-context projects",
+      "logo": "qwen",
+      "hf": "bytkim/Qwen3.8-27B-pi"
+    },
+    "qwen3.8-flash-next": {
+      "family": "qwen",
+      "name": "Qwen3.8-Flash-Next",
+      "released": "2026-08-24",
+      "reasoning": true,
+      "vision": true,
+      "about": "Qwen3.8's large mixture-of-experts model: far more knowledge than the 27B, with few active parameters, so it stays fast.",
+      "good_for": "The most capable model one 96 GB card, or a DGX Spark, runs",
+      "logo": "qwen",
+      "aa": {
+        "index": 39.8,
+        "name": "Qwen3.8-Flash-Next",
+        "slug": "qwen3-8-flash-next",
+        "estimated": false,
+        "at": "2026-10-05"
+      }
+    },
+    "qwen3.6-35b-a3b": {
+      "family": "qwen",
+      "name": "Qwen3.6-35B-A3B",
+      "released": "2026-04-15",
+      "reasoning": true,
+      "vision": true,
+      "about": "Qwen3.6's 35B mixture-of-experts model with 3B active parameters.",
+      "good_for": "Fast general work",
+      "logo": "qwen",
+      "aa": {
+        "index": 18.2,
+        "name": "Qwen3.6 35B A3B (Reasoning)",
+        "slug": "qwen3-6-35b-a3b",
+        "estimated": false,
+        "at": "2026-10-05"
+      }
+    },
+    "qwen3.5-9b": {
+      "family": "qwen",
+      "name": "Qwen3.5-9B",
+      "released": "2026-02-26",
+      "reasoning": true,
+      "vision": true,
+      "about": "Alibaba's 9B model from February 2026: small enough for an 8 GB card, with a 64K–128K window. It thinks, calls tools and stays quick on modest hardware.",
+      "good_for": "Fast answers and light agent work on 8–12 GB cards",
+      "logo": "qwen",
+      "hf": "Qwen/Qwen3.5-9B",
+      "aa": {
+        "index": 11.2,
+        "name": "Qwen3.5 9B (Reasoning)",
+        "slug": "qwen3-5-9b",
+        "estimated": false,
+        "at": "2026-10-05"
+      }
+    },
+    "gemma-4-12b": {
+      "family": "gemma",
+      "name": "Gemma 4 12B",
+      "released": "2026-05-23",
+      "reasoning": true,
+      "vision": true,
+      "about": "Google's Gemma 4 12B from May 2026: a compact multimodal model with thinking, good with images and documents.",
+      "good_for": "Vision, documents and quick chat",
+      "logo": "hf",
+      "aa": {
+        "index": 14.2,
+        "name": "Gemma 4 12B (Reasoning)",
+        "slug": "gemma-4-12b",
+        "estimated": true,
+        "at": "2026-10-05"
+      }
+    },
+    "gemma-4-26b-a4b": {
+      "family": "gemma",
+      "name": "Gemma 4 26B A4B",
+      "released": "2026-03-12",
+      "reasoning": true,
+      "vision": true,
+      "about": "Google's Gemma 4 mixture-of-experts model: 26B total, 4B active, so it runs fast while seeing images and thinking.",
+      "good_for": "Fast multimodal work on 16–24 GB cards",
+      "logo": "hf",
+      "aa": {
+        "index": 16.7,
+        "name": "Gemma 4 26B A4B (Reasoning)",
+        "slug": "gemma-4-26b-a4b",
+        "estimated": true,
+        "at": "2026-10-05"
+      }
+    },
+    "glm-5.3-flash": {
+      "family": "glm",
+      "name": "GLM-5.3-Flash",
+      "released": "2026-08-25",
+      "reasoning": true,
+      "vision": true,
+      "about": "Z.ai's GLM-5.3-Flash, a large mixture-of-experts model for multi-GPU machines.",
+      "good_for": "Frontier-class agent work on workstation GPUs",
+      "logo": "zai",
+      "aa": {
+        "index": 41.8,
+        "name": "GLM 5.3 Flash",
+        "slug": "glm-5-3-flash",
+        "estimated": false,
+        "at": "2026-10-05"
+      }
+    },
+    "deepseek-v4.1-flash": {
+      "family": "deepseek",
+      "name": "DeepSeek-V4.1-Flash",
+      "released": "2026-09-10",
+      "reasoning": true,
+      "vision": false,
+      "about": "DeepSeek's V4.1 Flash, a large mixture-of-experts model.",
+      "good_for": "Frontier-class reasoning on multi-GPU machines",
+      "logo": "deepseek",
+      "aa": {
+        "index": 39.5,
+        "name": "DeepSeek V4.1 Flash (Max)",
+        "slug": "deepseek-v4-1-flash",
+        "estimated": false,
+        "at": "2026-10-05"
+      }
+    },
+    "bonsai-2-27b": {
+      "family": "qwen",
+      "name": "Bonsai 2 27B",
+      "released": "2026-04-21",
+      "reasoning": true,
+      "vision": true,
+      "about": "Prism ML's ternary Bonsai 2, built on Qwen3.6-27B: a 27B model packed small enough for 16 GB, with vision, tools and thinking.",
+      "good_for": "A 27B-class model on a 16 GB workstation card",
+      "logo": "qwen",
+      "hf": "prism-ml/Ternary-Bonsai-2-27B-gguf"
+    },
+    "welp-35b-a3b": {
+      "family": "qwen",
+      "name": "Welp-35B-A3B",
+      "released": "2026-10-08",
+      "reasoning": true,
+      "vision": false,
+      "about": "Quaedra's 13.2 GB GGUF of Qwen3.6-35B-A3B: the routed experts quantized block-wise with GPTQ error feedback in standard llama.cpp formats, so the full 262k context fits on a 16 GB card.",
+      "good_for": "Fast long-context work on a 16 GB card",
+      "logo": "qwen",
+      "hf": "quaedra/Welp-35B-A3B-GGUF"
+    },
+    "deepseek-v4-flash": {
+      "family": "deepseek",
+      "name": "DeepSeek-V4-Flash",
+      "released": "2026-04-22",
+      "reasoning": true,
+      "vision": false,
+      "about": "DeepSeek's V4 Flash mixture-of-experts model (and its 0731 and DSpark builds).",
+      "good_for": "Long-context reasoning across two or more Sparks",
+      "logo": "deepseek",
+      "aa": {
+        "index": 24.4,
+        "name": "DeepSeek V4 Flash 0420 (High)",
+        "slug": "deepseek-v4-flash-0420-high",
+        "estimated": false,
+        "at": "2026-10-05"
+      }
+    },
+    "step-3.7-flash": {
+      "family": "step",
+      "name": "Step-3.7-Flash",
+      "released": "2026-05-23",
+      "reasoning": true,
+      "vision": false,
+      "about": "StepFun's Step 3.7 Flash mixture-of-experts model.",
+      "good_for": "Fast agentic reasoning on two Sparks",
+      "logo": "hf",
+      "aa": {
+        "index": 19.5,
+        "name": "Step 3.7 Flash",
+        "slug": "step-3-7-flash",
+        "estimated": true,
+        "at": "2026-10-05"
+      }
+    },
+    "step-5-preview": {
+      "family": "step",
+      "name": "Step-5-Preview",
+      "released": "2026-09-20",
+      "reasoning": true,
+      "vision": true,
+      "about": "StepFun's Step-5 preview, a ~600B mixture-of-experts model with image and video input.",
+      "good_for": "Frontier-class reasoning and agentic coding on four Sparks",
+      "logo": "hf"
+    },
+    "glm-5.2": {
+      "family": "glm",
+      "name": "GLM-5.2",
+      "released": "2026-06-16",
+      "reasoning": true,
+      "vision": true,
+      "about": "Z.ai's GLM-5.2 flagship, here as an NVFP4 + AQLM hybrid.",
+      "good_for": "The largest GLM on three Sparks",
+      "logo": "hf",
+      "aa": {
+        "index": 33.7,
+        "name": "GLM-5.2 (Max)",
+        "slug": "glm-5-2",
+        "estimated": false,
+        "at": "2026-10-05"
+      }
+    },
+    "gemma-4-31b": {
+      "family": "gemma",
+      "name": "Gemma 4 31B",
+      "released": "2026-03-11",
+      "reasoning": true,
+      "vision": true,
+      "about": "Google's dense Gemma 4, 31B parameters.",
+      "good_for": "A dense all-rounder with vision",
+      "logo": "hf",
+      "aa": {
+        "index": 14.7,
+        "name": "Gemma 4 31B (Reasoning)",
+        "slug": "gemma-4-31b",
+        "estimated": false,
+        "at": "2026-10-05"
+      }
+    },
+    "hy3": {
+      "family": "hunyuan",
+      "name": "Hy3-295B",
+      "released": "2026-07-02",
+      "reasoning": true,
+      "vision": false,
+      "about": "Tencent's Hunyuan 3 (Hy3) 295B mixture-of-experts.",
+      "good_for": "A very large model on two Sparks",
+      "logo": "hf",
+      "aa": {
+        "index": 25.3,
+        "name": "Hy3",
+        "slug": "hy3",
+        "estimated": false,
+        "at": "2026-10-05"
+      }
+    },
+    "inkling-small": {
+      "family": "inkling",
+      "name": "Inkling-Small",
+      "released": "2026-07-27",
+      "reasoning": true,
+      "vision": false,
+      "about": "Thinking Machines' Inkling Small.",
+      "good_for": "Million-token context on two Sparks",
+      "logo": "hf",
+      "aa": {
+        "index": 25.7,
+        "name": "Inkling Small",
+        "slug": "inkling-small",
+        "estimated": false,
+        "at": "2026-10-05"
+      }
+    },
+    "laguna-s-2.1": {
+      "family": "laguna",
+      "name": "Laguna-S-2.1",
+      "released": "2026-07-13",
+      "reasoning": true,
+      "vision": false,
+      "about": "Poolside's Laguna S 2.1 coding model.",
+      "good_for": "Coding agents",
+      "logo": "hf"
+    },
+    "leanstral-1.5-119b-a6b": {
+      "family": "mistral",
+      "name": "Leanstral-1.5-119B-A6B",
+      "released": "2026-07-01",
+      "reasoning": true,
+      "vision": false,
+      "about": "Mistral's Leanstral 1.5 for Lean 4 proof engineering.",
+      "good_for": "Formal proofs in Lean 4",
+      "logo": "hf"
+    },
+    "ling-3.0-flash": {
+      "family": "ling",
+      "name": "Ling-3.0-Flash",
+      "released": "2026-08-02",
+      "reasoning": true,
+      "vision": false,
+      "about": "inclusionAI's Ling 3.0 Flash mixture-of-experts.",
+      "good_for": "Fast chat and tools on one Spark",
+      "logo": "hf",
+      "aa": {
+        "index": 20.1,
+        "name": "Ling 3.0 Flash",
+        "slug": "ling-3-0-flash",
+        "estimated": false,
+        "at": "2026-10-05"
+      }
+    },
+    "mimo-v2.5": {
+      "family": "mimo",
+      "name": "MiMo-V2.5",
+      "released": "2026-04-27",
+      "reasoning": true,
+      "vision": true,
+      "about": "Xiaomi's MiMo V2.5 omni model.",
+      "good_for": "Text, image and audio on two Sparks",
+      "logo": "hf",
+      "aa": {
+        "index": 25.2,
+        "name": "MiMo-V2.5",
+        "slug": "mimo-v2-5-0424",
+        "estimated": true,
+        "at": "2026-10-05"
+      }
+    },
+    "mimo-v2.6-flash": {
+      "family": "mimo",
+      "name": "MiMo-V2.6-Flash",
+      "released": "2026-09-21",
+      "reasoning": true,
+      "vision": true,
+      "about": "Xiaomi's MiMo V2.6 Flash (RL build).",
+      "good_for": "Coding and chat on two Sparks",
+      "logo": "hf",
+      "aa": {
+        "index": 37.9,
+        "name": "MiMo-V2.6-Flash",
+        "slug": "mimo-v2-6-flash",
+        "estimated": false,
+        "at": "2026-10-05"
+      }
+    },
+    "muse-glimmer-30b": {
+      "family": "muse",
+      "name": "Muse Glimmer 30B",
+      "released": "2026-08-10",
+      "reasoning": true,
+      "vision": false,
+      "about": "Meta's Muse Glimmer 30B.",
+      "good_for": "A mid-size model with long context",
+      "logo": "hf",
+      "aa": {
+        "index": 17.5,
+        "name": "Muse Glimmer (High)",
+        "slug": "muse-glimmer",
+        "estimated": false,
+        "at": "2026-10-05"
+      }
+    },
+    "nemotron-labs-3-puzzle-75b-a9b": {
+      "family": "nemotron",
+      "name": "Nemotron-Labs-3-Puzzle-75B-A9B",
+      "released": "2026-06-24",
+      "reasoning": true,
+      "vision": false,
+      "about": "NVIDIA's Nemotron Labs 3 Puzzle mixture-of-experts.",
+      "good_for": "Reasoning on one Spark",
+      "logo": "hf"
+    },
+    "nemotron-3.5-lightning-30b-a3b": {
+      "family": "nemotron",
+      "name": "Nemotron 3.5 Lightning 30B-A3B",
+      "released": "2026-08-04",
+      "reasoning": true,
+      "vision": false,
+      "about": "NVIDIA's Nemotron 3.5 Lightning, a small fast mixture-of-experts.",
+      "good_for": "Fast chat and tools with a million-token window",
+      "logo": "hf",
+      "aa": {
+        "index": 12.9,
+        "name": "Nemotron 3.5 Lightning",
+        "slug": "nemotron-3-5-lightning",
+        "estimated": false,
+        "at": "2026-10-05"
+      }
+    },
+    "ornith-1.5-35b-a3b": {
+      "family": "ornith",
+      "name": "Ornith-1.5-35B-A3B",
+      "released": "2026-08-18",
+      "reasoning": true,
+      "vision": false,
+      "about": "Ornith 1.5, a 35B mixture-of-experts with built-in MTP.",
+      "good_for": "Fast serving on one Spark",
+      "logo": "hf"
+    },
+    "qwen3.6-27b": {
+      "family": "qwen",
+      "name": "Qwen3.6-27B",
+      "released": "2026-04-21",
+      "reasoning": true,
+      "vision": true,
+      "about": "Alibaba's dense Qwen3.6, 27B parameters.",
+      "good_for": "A dense all-rounder",
+      "logo": "qwen",
+      "aa": {
+        "index": 21.4,
+        "name": "Qwen3.6 27B (Reasoning)",
+        "slug": "qwen3-6-27b",
+        "estimated": false,
+        "at": "2026-10-05"
+      }
+    },
+    "swift-1.5-qwen3.8-27b": {
+      "family": "qwen",
+      "name": "Swift-1.5-Qwen3.8-27B",
+      "released": "2026-09-16",
+      "reasoning": true,
+      "vision": false,
+      "about": "UkisAI's post-training of Qwen3.8-27B for long-horizon agentic and coding work: it spends 58.5% fewer thinking tokens than Swift 1.0 while scoring slightly higher. The GSQ-RCO quants reuse ISTA-DASLab's published per-tensor allocation, refined with a Swift importance matrix, so IQ3_S lands at a KLD of 0.0417.",
+      "good_for": "Agentic coding at 128K on a 16 GB card",
+      "logo": "qwen",
+      "hf": "ukisai/Swift-1.5-Qwen3.8-27b"
+    },
+    "lfm2.5-2.6b": {
+      "family": "lfm",
+      "name": "LFM2.5-2.6B",
+      "released": "2026-07-28",
+      "reasoning": false,
+      "vision": false,
+      "about": "Liquid AI's 2.6B hybrid model: tiny and fast, built for on-device work.",
+      "good_for": "Quick chat on 8 GB cards",
+      "logo": "hf",
+      "hf": "LiquidAI/LFM2.5-2.6B",
+      "aa": {
+        "index": 8.4,
+        "name": "LFM2.5-2.6B",
+        "slug": "lfm2-5-2-6b",
+        "estimated": true,
+        "at": "2026-10-05"
+      }
+    },
+    "lfm2.5-8b-a1b": {
+      "family": "lfm",
+      "name": "LFM2.5-8B-A1B",
+      "released": "2026-05-28",
+      "reasoning": false,
+      "vision": false,
+      "about": "Liquid AI's 8B mixture-of-experts with about 1B active: fast on small cards.",
+      "good_for": "Fast chat on 8-10 GB cards",
+      "logo": "hf",
+      "hf": "LiquidAI/LFM2.5-8B-A1B",
+      "aa": {
+        "index": 7.2,
+        "name": "LFM2.5-8B-A1B",
+        "slug": "lfm2-5-8b-a1b",
+        "estimated": true,
+        "at": "2026-10-05"
+      }
+    },
+    "ornith-1.5-9b": {
+      "family": "ornith",
+      "name": "Ornith-1.5-9B",
+      "released": "2026-08-18",
+      "reasoning": true,
+      "vision": false,
+      "about": "Ornith 1.5, the dense 9B.",
+      "good_for": "A small reasoning model",
+      "logo": "hf",
+      "hf": "ornith-ai/Ornith-1.5-9B"
+    },
+    "gemma-4-e4b": {
+      "family": "gemma",
+      "name": "Gemma 4 E4B",
+      "released": "2026-03-02",
+      "reasoning": true,
+      "vision": true,
+      "about": "Google's Gemma 4 E4B: an efficient on-device multimodal model.",
+      "good_for": "Vision and chat on laptops",
+      "logo": "hf",
+      "hf": "google/gemma-4-E4B-it",
+      "aa": {
+        "index": 8.9,
+        "name": "Gemma 4 E4B (Reasoning)",
+        "slug": "gemma-4-e4b",
+        "estimated": true,
+        "at": "2026-10-05"
+      }
+    },
+    "glm-5.3": {
+      "family": "glm",
+      "name": "GLM-5.3",
+      "released": "2026-08-25",
+      "reasoning": true,
+      "vision": false,
+      "about": "Z.ai's full GLM-5.3, the large sibling of GLM-5.3-Flash: frontier-class reasoning and agent work for a four-card workstation.",
+      "good_for": "The strongest open model on 4 × RTX PRO 6000",
+      "logo": "zai",
+      "hf": "zai-org/GLM-5.3",
+      "aa": {
+        "index": 44.8,
+        "name": "GLM-5.3 (Max)",
+        "slug": "glm-5-3",
+        "estimated": false,
+        "at": "2026-10-05"
+      }
+    },
+    "diffusiongemma-26b-a4b": {
+      "family": "gemma",
+      "name": "DiffusionGemma 26B A4B",
+      "released": "2026-06-09",
+      "reasoning": true,
+      "vision": true,
+      "about": "Google's discrete-diffusion Gemma 4 26B A4B: decodes blocks of tokens in parallel, with vision and thinking.",
+      "good_for": "Very fast generation",
+      "logo": "hf",
+      "hf": "google/diffusiongemma-26B-A4B-it",
+      "aa": {
+        "index": 9.5,
+        "name": "DiffusionGemma 26B A4B",
+        "slug": "diffusiongemma-26b-a4b",
+        "estimated": true,
+        "at": "2026-10-05"
+      }
+    },
+    "gemma-4-26b-a4b-it-awq-4bit": {
+      "family": "gemma",
+      "name": "gemma-4-26B-A4B-it-AWQ-4bit",
+      "released": "2026-04-03",
+      "reasoning": true,
+      "vision": true,
+      "about": "cyankiwi's AWQ INT4 quant of Gemma 4 26B A4B.",
+      "good_for": "Fast multimodal MoE in 17 GB",
+      "logo": "hf",
+      "hf": "cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit",
+      "aa": {
+        "of": "gemma-4-26b-a4b"
+      }
+    },
+    "gemma-4-26b-a4b-it-awq-8bit": {
+      "family": "gemma",
+      "name": "gemma-4-26B-A4B-it-AWQ-8bit",
+      "released": "2026-04-03",
+      "reasoning": true,
+      "vision": true,
+      "about": "cyankiwi's AWQ INT8 quant of Gemma 4 26B A4B.",
+      "good_for": "Near-full quality MoE in 29 GB",
+      "logo": "hf",
+      "hf": "cyankiwi/gemma-4-26B-A4B-it-AWQ-8bit",
+      "aa": {
+        "of": "gemma-4-26b-a4b"
+      }
+    },
+    "gemma-4-31b-it-awq-4bit": {
+      "family": "gemma",
+      "name": "gemma-4-31B-it-AWQ-4bit",
+      "released": "2026-04-02",
+      "reasoning": true,
+      "vision": true,
+      "about": "cyankiwi's AWQ INT4 quant of Gemma 4 31B.",
+      "good_for": "Dense all-rounder in 21 GB",
+      "logo": "hf",
+      "hf": "cyankiwi/gemma-4-31B-it-AWQ-4bit",
+      "aa": {
+        "of": "gemma-4-31b"
+      }
+    },
+    "gemma-4-31b-it-awq-8bit": {
+      "family": "gemma",
+      "name": "gemma-4-31B-it-AWQ-8bit",
+      "released": "2026-04-02",
+      "reasoning": true,
+      "vision": true,
+      "about": "cyankiwi's AWQ INT8 quant of Gemma 4 31B.",
+      "good_for": "Near-full quality dense model in 35 GB",
+      "logo": "hf",
+      "hf": "cyankiwi/gemma-4-31B-it-AWQ-8bit",
+      "aa": {
+        "of": "gemma-4-31b"
+      }
+    },
+    "gemma-4-12b-it-awq-int4": {
+      "family": "gemma",
+      "name": "gemma-4-12B-it-AWQ-INT4",
+      "released": "2026-06-04",
+      "reasoning": true,
+      "vision": true,
+      "about": "cyankiwi's AWQ INT4 quant of Gemma 4 12B.",
+      "good_for": "Vision and quick chat in 11 GB",
+      "logo": "hf",
+      "hf": "cyankiwi/gemma-4-12B-it-AWQ-INT4",
+      "aa": {
+        "of": "gemma-4-12b"
+      }
+    },
+    "diffusiongemma-26b-a4b-it-awq-int4": {
+      "family": "gemma",
+      "name": "diffusiongemma-26B-A4B-it-AWQ-INT4",
+      "released": "2026-06-15",
+      "reasoning": true,
+      "vision": true,
+      "about": "cyankiwi's AWQ INT4 quant of DiffusionGemma 26B A4B.",
+      "good_for": "Very fast generation in 17 GB",
+      "logo": "hf",
+      "hf": "cyankiwi/diffusiongemma-26B-A4B-it-AWQ-INT4",
+      "aa": {
+        "of": "diffusiongemma-26b-a4b"
+      }
+    },
+    "qwen3.8-27b-awq-bf16-int4": {
+      "family": "qwen",
+      "name": "Qwen3.8-27B-AWQ-BF16-INT4",
+      "released": "2026-08-17",
+      "reasoning": true,
+      "vision": true,
+      "about": "cyankiwi's AWQ INT4 quant of Qwen3.8-27B, linear attention kept in BF16.",
+      "good_for": "Coding agents in 29 GB",
+      "logo": "qwen",
+      "hf": "cyankiwi/Qwen3.8-27B-AWQ-BF16-INT4",
+      "aa": {
+        "of": "qwen3.8-27b"
+      }
+    },
+    "qwen3.8-27b-awq-fp8": {
+      "family": "qwen",
+      "name": "Qwen3.8-27B-AWQ-FP8",
+      "released": "2026-08-15",
+      "reasoning": true,
+      "vision": true,
+      "about": "cyankiwi's AWQ FP8 quant of Qwen3.8-27B.",
+      "good_for": "Near-full quality coding agents in 31 GB",
+      "logo": "qwen",
+      "hf": "cyankiwi/Qwen3.8-27B-AWQ-FP8",
+      "aa": {
+        "of": "qwen3.8-27b"
+      }
+    },
+    "qwen3.8-flash-next-awq-int4": {
+      "family": "qwen",
+      "name": "Qwen3.8-Flash-Next-AWQ-INT4",
+      "released": "2026-08-28",
+      "reasoning": true,
+      "vision": true,
+      "about": "cyankiwi's AWQ INT4 quant of Qwen3.8-Flash-Next.",
+      "good_for": "Large MoE in 188 GB",
+      "logo": "qwen",
+      "hf": "cyankiwi/Qwen3.8-Flash-Next-AWQ-INT4",
+      "aa": {
+        "of": "qwen3.8-flash-next"
+      }
+    },
+    "glm-5.3-flash-awq-int4": {
+      "family": "glm",
+      "name": "GLM-5.3-Flash-AWQ-INT4",
+      "released": "2026-08-29",
+      "reasoning": true,
+      "vision": true,
+      "about": "cyankiwi's AWQ INT4 quant of GLM-5.3-Flash.",
+      "good_for": "Agent work on two Sparks or multi-GPU",
+      "logo": "zai",
+      "hf": "cyankiwi/GLM-5.3-Flash-AWQ-INT4",
+      "aa": {
+        "of": "glm-5.3-flash"
+      }
+    },
+    "glm-5.3-awq-int4": {
+      "family": "glm",
+      "name": "GLM-5.3-AWQ-INT4",
+      "released": "2026-09-01",
+      "reasoning": true,
+      "vision": false,
+      "about": "cyankiwi's AWQ INT4 quant of GLM-5.3.",
+      "good_for": "Frontier reasoning on large multi-GPU rigs",
+      "logo": "zai",
+      "hf": "cyankiwi/GLM-5.3-AWQ-INT4",
+      "aa": {
+        "of": "glm-5.3"
+      }
+    },
+    "bonsai-2-9b": {
+      "family": "qwen",
+      "name": "Bonsai 2 9B",
+      "released": "2026-09-23",
+      "reasoning": true,
+      "vision": true,
+      "about": "Prism ML's ternary Bonsai 2 9B, based on Qwen3.5-9B, with thinking and tool calling. The Q2_0 packing requires upstream llama.cpp with Bonsai Hadamard support.",
+      "good_for": "Compact local chat and agent work on consumer GPUs",
+      "logo": "qwen",
+      "hf": "prism-ml/Ternary-Bonsai-2-9B-gguf"
+    },
+    "nemotron-3.5-bolt-74b-a9b": {
+      "family": "nemotron",
+      "name": "Nemotron 3.5 Bolt 74B-A9B",
+      "released": "2026-10-15",
+      "reasoning": true,
+      "vision": true,
+      "about": "NVIDIA's hybrid Mamba-Transformer MoE (74B total, about 9B active), compressed from Nemotron 3.5 Super VL and quantization-aware distilled to a 24 GB checkpoint (IQ2_XXS experts, NVFP4 Mamba layers, Q8_0 attention), with an image projector.",
+      "good_for": "Local agents, chat, reasoning, tool calls and images on one 32 GB GPU",
+      "logo": "hf",
+      "hf": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF"
+    }
+  },
+  "builds": {
+    "ConwayResearch/Underdog-Saluki-27B-1.0@1336c0b5d74dfe6ad7f793577092f5effd9f97c6": {
+      "format": "GGUF · IQ2-mix",
+      "size_gb": 7.898369152
+    },
+    "TheMelonGod/Qwen3.5-9B-exl3@22ef1303062e0f6d0b282440f8c1f685947f4938": {
+      "format": "EXL3 · 3 bpw, 6-bit head",
+      "size_gb": 6.47
+    },
+    "TheMelonGod/Qwen3.5-9B-exl3@e98453aa143a24fab9eb14b718daed02e2fa6eef": {
+      "format": "EXL3 · 4 bpw, 6-bit head",
+      "size_gb": 6.83
+    },
+    "turboderp/Qwen3.8-27B-exl3@60d005a257b39ecb25e4ba23c1dd29df877d5c69": {
+      "format": "EXL3 · SC 6.00bpw H6 V6",
+      "size_gb": 22.62
+    },
+    "turboderp/gemma-4-12B-it-exl3@e8d17ffbe696accdba72a47dac858d7e880d709e": {
+      "format": "EXL3 · 4 bpw",
+      "size_gb": 8.37
+    },
+    "turboderp/gemma-4-12B-it-exl3@38309570753c5fde71a818feb513b1e09a81fc18": {
+      "format": "EXL3 · 3 bpw",
+      "size_gb": 7.0
+    },
+    "turboderp/gemma-4-26B-A4B-it-exl3@fcd233b05c0b89563035be29e26d681fbf2bcc1d": {
+      "format": "EXL3 · 3.1 bpw",
+      "size_gb": 13.65
+    },
+    "turboderp/Qwen3.8-Flash-Next-exl3@65c895314393431c09050b2e04e250836b3a6eb4": {
+      "format": "EXL3 · 2.05 bpw",
+      "size_gb": 62.82
+    },
+    "turboderp/Qwen3.8-27B-exl3@25019f1663e0e0bcfc363609f1dbabd5604b04e4": {
+      "format": "EXL3 · SC 2.2 bpw",
+      "size_gb": 10.32
+    },
+    "TheMelonGod/Qwen3.5-9B-exl3@7fbc2095db50b0d56f7f07ac84903f98f883d3b9": {
+      "format": "EXL3 · 6 bpw, 6-bit head",
+      "size_gb": 9.06
+    },
+    "TheMelonGod/Qwen3.5-9B-exl3@d6da14ea3d914a7571f8880775749404087c72bd": {
+      "format": "EXL3 · 8 bpw, 8-bit head",
+      "size_gb": 11.04
+    },
+    "turboderp/gemma-4-26B-A4B-it-exl3@241bce8ff2259445258144a660678c47030867cf": {
+      "format": "EXL3 · 5.1 bpw",
+      "size_gb": 20.3
+    },
+    "turboderp/gemma-4-26B-A4B-it-exl3@75510f9febfdea0fa22546a2725581cba6984fbb": {
+      "format": "EXL3 · 6.1 bpw",
+      "size_gb": 23.62
+    },
+    "nvidia/Qwen3.8-27B-NVFP4@482ca0f3832238542f8f5295dde86b5f22711d80": {
+      "format": "NVFP4",
+      "size_gb": 21.9
+    },
+    "nvidia/Qwen3.6-35B-A3B-NVFP4@1355db6a052410cfd62085d94b58866fd0f2c3c5": {
+      "format": "NVFP4",
+      "size_gb": 23.5
+    },
+    "AxionML/Qwen3.5-9B-NVFP4@97aef92393f126bf649f310cd40861be8dad3279": {
+      "format": "NVFP4",
+      "size_gb": 9.4
+    },
+    "Qwen/Qwen3.6-35B-A3B-FP8@95a723d08a9490559dae23d0cff1d9466213d989": {
+      "format": "FP8",
+      "size_gb": 37.5
+    },
+    "Qwen/Qwen3.8-27B-FP8@017b9c7af6b5689d5dd426a76e0bc077eb5ca20a": {
+      "format": "FP8",
+      "size_gb": 30.9
+    },
+    "ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF@d74895bbe5db4bec1e0024e7cc87d59c02d7631a": {
+      "format": "GGUF · IQ3_S + MTP",
+      "size_gb": 12.12
+    },
+    "mlx-community/Qwen3.8-27B-4bit@10c35caafbb80f7dc6a7a432cdd11af10a6d4818": {
+      "format": "MLX · 4-bit (g64), MTP drafter",
+      "size_gb": 16.08
+    },
+    "leonsarmiento/Qwen3.8-27B-3bit-mlx@5fc234d9e6080b8388a11286380e801b7c9f535c": {
+      "format": "MLX · 3-bit (g64), 8-bit vision, MTP drafter",
+      "size_gb": 12.73
+    },
+    "ggml-org/Qwen3.8-27B-GGUF@0669b98607d47046c7c2b3f801011d54a08cfccf": {
+      "format": "GGUF Q4_K_M",
+      "size_gb": 18.974
+    },
+    "turboderp/Qwen3.8-27B-exl3@113cf7ab958054860e43fb7f3063b1af19171095": {
+      "format": "EXL3 · 4 bpw",
+      "size_gb": 15.73
+    },
+    "Qwen/Qwen3.6-35B-A3B@995ad96eacd98c81ed38be0c5b274b04031597b0": {
+      "format": "safetensors · NVFP4",
+      "size_gb": 71.9
+    },
+    "ornith-ai/Ornith-1.5-35B-A3B@10fbf86fed7ecee4a061f8b499a618f46001cac1": {
+      "format": "nvfp4",
+      "size_gb": 71.9
+    },
+    "LiquidAI/LFM2.5-2.6B@a334ee78cd38458bb71eda24109ac42dcec1309d": {
+      "format": "safetensors · BF16",
+      "size_gb": 5.024
+    },
+    "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5": {
+      "format": "GGUF · Q4_K_M",
+      "size_gb": 5.68
+    },
+    "unsloth/Qwen3.8-27B-GGUF@4ca720788d1e01f1bff70c033e0d0028fd02e502": {
+      "format": "GGUF · UD-Q2_K_XL",
+      "size_gb": 9.83
+    },
+    "unsloth/Qwen3.6-27B-MTP-GGUF@5cb35eb3dcbf52dbce5f87dbc64df6aaffadcace": {
+      "format": "GGUF · IQ4_XS + MTP",
+      "size_gb": 15.71
+    },
+    "unsloth/Qwen3.6-35B-A3B-GGUF@a483e9e6cbd595906af30beda3187c2663a1118c": {
+      "format": "GGUF · UD-IQ3_S",
+      "size_gb": 13.677
+    },
+    "ornith-ai/Ornith-1.5-35B-A3B-GGUF@12393612fd4f730ff5aadc23e9b8f9648aa49ceb": {
+      "format": "Q6_K",
+      "size_gb": 29.209
+    },
+    "unsloth/gemma-4-26B-A4B-it-GGUF@c099eb48e663fd284577b04978a94ffccb261841": {
+      "format": "Q3_K_XL",
+      "size_gb": 12.907
+    },
+    "orcarouter/Qwen3.8-27B-Uncensored-GGUF@a855f377abf5cbda99a278414466743f427e97c8": {
+      "format": "Q6_K",
+      "size_gb": 22.431
+    },
+    "unsloth/Qwen3.6-35B-A3B-MTP-GGUF@5bc3e238d916f48a861bac2f8a1990a0e9b7e98d": {
+      "format": "Q4_K_M",
+      "size_gb": 22.663
+    },
+    "FastFlowLM/Qwen3.5-9B-NPU2@eb89ce72f46131fd55d62ecfec42fd653fa20c86": {
+      "format": "NPU2 · Q4NX",
+      "size_gb": 8.67
+    },
+    "ornith-ai/Ornith-1.5-35B-A3B-NVFP4@0f0b1b59b879ccde1353e6ebd0fb10c204d4c544": {
+      "format": "ModelOpt · NVFP4",
+      "size_gb": 21.8
+    },
+    "RedHatAI/Muse-Glimmer-30B-NVFP4@e83ead547c81973aaa09c0072c0dbc916e0d8190": {
+      "format": "NVFP4",
+      "size_gb": 23.38
+    },
+    "turboderp/Qwen3.8-27B-exl3@f33f26d929e2b20ef21361145d582f5239e3831f": {
+      "format": "EXL3 · SC 5.00bpw H6 V6",
+      "size_gb": 18.24
+    },
+    "unsloth/gemma-4-12b-it-NVFP4@b1f649734b34aa5575b03d186abd1b9be3d0d5c4": {
+      "format": "ModelOpt · NVFP4",
+      "size_gb": 8.7
+    },
+    "RadixArk/Qwen3.8-27B-NVFP4@319f741cce68d7914884900c138a1fbb70a42f30": {
+      "format": "ModelOpt · NVFP4",
+      "size_gb": 20.4
+    },
+    "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4@bee7596271d1495f6992ae224aefde4410e816b8": {
+      "format": "NVFP4",
+      "size_gb": 21.56
+    },
+    "turboderp/Qwen3.8-27B-exl3@d23340a1fdb479f3c2878136dcede06cf57ea31a": {
+      "format": "EXL3 · bpw set by the launch"
+    },
+    "ornith-ai/Ornith-1.5-9B@489cb97981b8654bcfcf30ce1f94ed1b62e07b53": {
+      "format": "BF16",
+      "size_gb": 17.99
+    },
+    "Twu31/Qwen3.6-35B-A3B-GPTQ-INT4-W4A16-LowLatency@d14fd7339b09364ea2aabc542ea20f7dccd97ca1": {
+      "format": "GPTQ · INT4 W4A16",
+      "size_gb": 20
+    },
+    "cyankiwi/Qwen3.8-27B-AWQ-INT4@63768c10df38c0395e12ef49edac1bd539eaeeea": {
+      "format": "AWQ · INT4 W4A16",
+      "size_gb": 20
+    },
+    "turboderp/Qwen3.8-27B-exl3@6fe61ad620abfe97c5b49f9722c2bceeea4ccc28": {
+      "format": "EXL3 · 3 bpw",
+      "size_gb": 13.84
+    },
+    "ultimatechris/Ornith-1.5-35B-A3B-EXL3-4bpw@875ac67dae8e793770396908c575c507f4cd5f75": {
+      "format": "EXL3 · 4 bpw",
+      "size_gb": 18.47
+    },
+    "Mia-AiLab/Qwen3.8-27B-EXL3-3.5bpw@19441ac874c4018295da848e250f23511361cda4": {
+      "format": "EXL3 · 3.5 bpw",
+      "size_gb": 15.34
+    },
+    "yeasah/Qwen3.6-35B-A3B-exl3@73da68ef827084d72c59936b4c2088c6580f4e2b": {
+      "format": "EXL3 · 3.00 bpw, head 5 bits",
+      "size_gb": 15.92
+    },
+    "turboderp/Qwen3.8-27B-exl3@4acd9ad5af224ec9e8815a54d71a033f378a7e9d": {
+      "format": "EXL3 · SC 4.00bpw H5",
+      "size_gb": 15.59
+    },
+    "google/gemma-4-E4B-it-qat-q4_0-gguf@4b4a2c1d584be7264f87aac328a1bc739ce81b6c": {
+      "format": "Q4_K_XL",
+      "size_gb": 5.15
+    },
+    "LiquidAI/LFM2.5-2.6B-GGUF@84022ce711b28455e8c4fc364ce68c00cf995875": {
+      "format": "GGUF · QAD-Q4_0",
+      "size_gb": 1.59
+    },
+    "google/gemma-4-12B-it-qat-q4_0-gguf@29d097773436b69ff9feafd636ab4cf873786537": {
+      "format": "GGUF · Q4_0",
+      "size_gb": 6.98
+    },
+    "LiquidAI/LFM2.5-8B-A1B-GGUF@49c14831707011e64d70b2ebd8462ba08d608434": {
+      "format": "GGUF · Q4_K_M",
+      "size_gb": 5.16
+    },
+    "turboderp/Qwen3.8-27B-exl3@004a887127d8304ca2d5475d3a3c41f1761fdd27": {
+      "format": "EXL3 · SC 3.00bpw H4 V4",
+      "size_gb": 12.12
+    },
+    "Mia-AiLab/Qwen3.8-27B-EXL3-2.0bpw@b4925724092da59826c02d25a7201fb272bf4f34": {
+      "format": "EXL3 · 2.0 bpw",
+      "size_gb": 9.68
+    },
+    "deepseek-ai/DeepSeek-V4.1-Flash@fb2764a5cf321eaa5070ca8f9e892818f477c16d": {
+      "format": "safetensors · FP8",
+      "size_gb": 510.313
+    },
+    "unsloth/Qwen3.8-27B-NVFP4@f0b7c9e722f5565102fff8481c99e4d86ae099c7": {
+      "format": "NVFP4",
+      "size_gb": 23.42
+    },
+    "davidsyoung/GLM-5.3-EXL3-TR3-3.0bpw@ffb7770ea91f088eaf7eeef90ca2ed6b26dc70fe": {
+      "format": "EXL3 Trellis TR3 · 3.0 bpw",
+      "size_gb": 316.42026932
+    },
+    "local-inference-lab/GLM-5.3-Flash-NVFP4@46aaae8a82032f77100f2f03e9cc11b391df3b4d": {
+      "format": "NVFP4 · NVFP4 experts / BF16 sensitive target weights",
+      "size_gb": 199.387195646
+    },
+    "poolside/Laguna-S-2.1-NVFP4@826aacdf6d8b2699d4e367def6f17c83b06044c2": {
+      "format": "NVFP4",
+      "size_gb": 99.697
+    },
+    "brandonmusic/GLM-5.2-EXL3-TR3-3.0bpw@677eaa98b41b9f06abaad03953659c2872c22ce3": {
+      "format": "EXL3 Trellis TR3 · 3.0 bpw",
+      "size_gb": 294.8
+    },
+    "RadixArk/Qwen3.8-27B-NVFP4-BF16-LMHead@009632fef96dd349150baa780c984e62e70e91fe": {
+      "format": "safetensors · NVFP4",
+      "size_gb": 23.749
+    },
+    "kodelow/Hy3-NVFP4-W4A16@4f7e1f02f32f4662bdc47f1237f34995088867a9": {
+      "format": "NVFP4",
+      "size_gb": 180.84
+    },
+    "lukealonso/MiMo-V2.5-NVFP4@a147dd04d6cf861e43b2d783dcde23b53ab7ee68": {
+      "format": "NVFP4",
+      "size_gb": 183.5
+    },
+    "jarrelscy/GLM-5.2-NVFP4-AQLM-hybrid@2d2ee496fbbe81222789bc8828a770241d2ffa2b": {
+      "format": "NVFP4",
+      "size_gb": 291.56
+    },
+    "stepfun-ai/Step-3.7-Flash-NVFP4@4275532ffd9a9496ff36b7a2dc4a9db1048da438": {
+      "format": "ModelOpt · NVFP4",
+      "size_gb": 129.242
+    },
+    "deepseek-ai/DeepSeek-V4-Flash@60d8d70770c6776ff598c94bb586a859a38244f1": {
+      "format": "IQ3_XXS",
+      "size_gb": 159.62
+    },
+    "thinkingmachines/Inkling-Small-NVFP4@b6a99534467840620d411e4cd4ad5819b2610d9c": {
+      "format": "ModelOpt · NVFP4",
+      "size_gb": 170.73
+    },
+    "nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-NVFP4@1d370e47fbc56d1019a471c2339663cdbbb5236f": {
+      "format": "NVFP4",
+      "size_gb": 53.504
+    },
+    "jarrelscy/GLM-5.2-NVFP4-AQLM-hybrid@53e0082eedebd806b63e19779c47905937d768ca": {
+      "format": "hybrid ModelOpt+AQLM · NVFP4 hot experts + AQLM 2-bit cold experts",
+      "size_gb": 272
+    },
+    "0xSero/deepseek-v4-flash-0731-spark@22f28d32b9b29b4352eaa380ff8c2c170b2847ab": {
+      "format": "EXL3 · 3.0 bpw REAP-K216",
+      "size_gb": 99.5
+    },
+    "nvidia/Gemma-4-31B-IT-NVFP4@4135a98a9b728a548947683219633b25682223ac": {
+      "format": "ModelOpt · NVFP4",
+      "size_gb": 32.633
+    },
+    "nvidia/Qwen3.8-Flash-Next-NVFP4@fc694b54fb0174e0913e6adf86691ef85a4ead47": {
+      "format": "NVFP4",
+      "size_gb": 132.735
+    },
+    "nvidia/Qwen3.6-27B-NVFP4@0893e1606ff3d5f97a441f405d5fc541a6bdf404": {
+      "format": "safetensors · NVFP4 modelopt-mixed W4A16+FP8",
+      "size_gb": 21.922
+    },
+    "unsloth/Qwen3.6-35B-A3B-NVFP4@739af1e7aac320af1682ed1e0cce369af4c5265d": {
+      "format": "ModelOpt · NVFP4",
+      "size_gb": 26.49
+    },
+    "ornith-ai/Ornith-1.5-35B-A3B-NVFP4@94e431d9cc47fa1986a7a1a4e9a80f7f118b03aa": {
+      "format": "NVFP4",
+      "size_gb": 23.42
+    },
+    "nvidia/Gemma-4-26B-A4B-NVFP4@a19cfe00be84568a6867111c9a68c9c44fdcffe6": {
+      "format": "safetensors · NVFP4",
+      "size_gb": 18.788
+    },
+    "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp@86f746b36186f0e567729a5c06a8c918caba82a9": {
+      "format": "safetensors · FP8",
+      "size_gb": 167.82
+    },
+    "inclusionAI/Ling-3.0-flash-int4@7a27e9eb8179b2c2eb71eb214f0dab14ec6a63f2": {
+      "format": "INT4",
+      "size_gb": 77.01
+    },
+    "mistralai/Leanstral-1.5-119B-A6B@81592da95d94ab0439bfce16df1d55b402e598b6": {
+      "format": "safetensors · FP8",
+      "size_gb": 120.93
+    },
+    "XiaomiMiMo/MiMo-V2.6-Flash-RL@3b38d063180c3e4aed9691fdc735f3d10b266ee4": {
+      "format": "safetensors · FP8",
+      "size_gb": 177.74
+    },
+    "LibertAIDAI/GLM-5.3-Flash-NVFP4@9e0d74e3cef17f634e84fb8e2223707e02616290": {
+      "format": "ModelOpt · NVFP4",
+      "size_gb": 182
+    },
+    "deepseek-ai/DeepSeek-V4-Flash-0731@7872f01b1d1fe23eabc4c98b48bffcef5a386062": {
+      "format": "safetensors · FP8",
+      "size_gb": 166.887
+    },
+    "LibertAIDAI/GLM-5.3-Flash-NVFP4@caca4e6a4ebbd66f159d3d2fc256683fd6e27177": {
+      "format": "NVFP4",
+      "size_gb": 194.67
+    },
+    "Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-2.9bpw@64ba41b6c916a587db06eae2e19b7845f7be6e6b": {
+      "format": "EXL3 · 2.9 bpw",
+      "size_gb": 210.6
+    },
+    "Youssofal/Qwen3.8-27B-MTPLX-Bare-Speed@b59d7002368575f08a58ba0d26686b53a9c162d6": {
+      "format": "MLX · 4-bit, native MTP",
+      "size_gb": 16.29
+    },
+    "Vontra/GLM-5.3-Flash-MLX-4bit-MTP@76add2a341a1cd90ad0e86bb69839ea9c35827c6": {
+      "format": "MLX · 4-bit (g64), native MTP",
+      "size_gb": 181.71
+    },
+    "gcoli/Qwen3.8-27B-oQ4e-mtp@c41ed507f1b16320942a1e9ce340e71d2692dee2": {
+      "format": "MLX · oQ4e 4-bit, native MTP",
+      "size_gb": 16.98
+    },
+    "Jundot/Qwen3.8-27B-oQ4e-mtp@04dc5509edd8670fc78cc8c2f74bf9b77b1f2acc": {
+      "format": "MLX · oQ4e 4-bit, native MTP, vision",
+      "size_gb": 16.97
+    },
+    "turboderp/Qwen3.8-Flash-Next-exl3@69e33439ae950f17bcbe95c98f117d80f759ab6d": {
+      "format": "EXL3 · 3.05 bpw",
+      "size_gb": 85.14
+    },
+    "Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-3.0bpw@c5534b90602b4090980a1c3ded1eb3b4d99a38d5": {
+      "format": "EXL3 · 3.0 bpw (experts in RAM, CPU tier)",
+      "size_gb": 219.3
+    },
+    "cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit@180b2d35e35e4e48f6245367f3b41036f7cdabd6": {
+      "format": "AWQ · INT4 W4A16 (g32, sym)",
+      "size_gb": 17.191
+    },
+    "cyankiwi/gemma-4-26B-A4B-it-AWQ-8bit@64cb43bd9e7b7e5966bfd557e5cb528ad0b1ec49": {
+      "format": "AWQ · INT8 W8A16 (g32, sym)",
+      "size_gb": 29.161
+    },
+    "cyankiwi/gemma-4-31B-it-AWQ-4bit@6f1b616c64bca2a05d67fdd6437c5500a8509327": {
+      "format": "AWQ · INT4 W4A16 (g32, asym)",
+      "size_gb": 20.904
+    },
+    "cyankiwi/gemma-4-31B-it-AWQ-8bit@34ca187d836de874b2c7e3edf48f439b9f583772": {
+      "format": "AWQ · INT8 W8A16 (g32, sym)",
+      "size_gb": 35.09
+    },
+    "cyankiwi/gemma-4-12B-it-AWQ-INT4@ad2d7e521f3eaee492973ab130025e610b216d2c": {
+      "format": "AWQ · INT4 W4A16 (g32, asym)",
+      "size_gb": 11.222
+    },
+    "cyankiwi/diffusiongemma-26B-A4B-it-AWQ-INT4@e213a1e67c930d0be6df55524dfc25760080f8b7": {
+      "format": "AWQ · INT4 W4A16 (g32, sym)",
+      "size_gb": 17.227
+    },
+    "cyankiwi/Qwen3.8-27B-AWQ-BF16-INT4@dc430725f831dd90d9271738b877879a46a82239": {
+      "format": "AWQ · INT4 W4A16 (g32, asym), BF16 linear attention",
+      "size_gb": 28.845
+    },
+    "cyankiwi/Qwen3.8-27B-AWQ-FP8@74e3640e4e29730a7ba57b7c96a62b7bdde13143": {
+      "format": "AWQ · FP8 W8A8 (per-channel, dynamic per-token)",
+      "size_gb": 31.275
+    },
+    "cyankiwi/Qwen3.8-Flash-Next-AWQ-INT4@d39638a0e740fccb3e24ae0ea5cab34c15371ae6": {
+      "format": "AWQ · INT4 W4A16 (g32, asym)",
+      "size_gb": 188.286
+    },
+    "cyankiwi/GLM-5.3-Flash-AWQ-INT4@f20f4fc479080ada4e19fbf4bf986e7f0c315700": {
+      "format": "AWQ · INT4 W4A16 (g32, asym)",
+      "size_gb": 197.191
+    },
+    "cyankiwi/GLM-5.3-AWQ-INT4@20f265b66eed1be007ac24d1814c1b47f8e21167": {
+      "format": "AWQ · INT4 W4A16 (g32, asym)",
+      "size_gb": 488.176
+    },
+    "google/diffusiongemma-26B-A4B-it@f7f5b7f5fa82ffc52addd066915886d497f5517b": {
+      "format": "safetensors · BF16",
+      "size_gb": 51.68
+    },
+    "0xSero/DeepSeek-V4.1-Flash-Spark@08ac8b3defc9a239ba0baf51059687c689406519": {
+      "format": "EXL3 · mixed 2/3/5-bit routed experts, native base for the rest",
+      "size_gb": 461.9
+    },
+    "mrq/Qwen3.8-27B-pi-exl3-3.00bpw@3412e8c5a6cafdc75924fd52e339dee72de88285": {
+      "format": "EXL3 · 3.00 bpw, head 6 bits, MTP 4 bits",
+      "size_gb": 13.84
+    },
+    "carloslfu/Qwen3.8-Flash-Next-MLX-4bit@e9d552f83de4665d243d5c9cf73201a1ca6c16d7": {
+      "format": "MLX · 4-bit (g64), native MTP",
+      "size_gb": 105.3
+    },
+    "prism-ml/Ternary-Bonsai-2-9B-gguf@5b2abb02362efbed46bbe204014b02837778b2c2": {
+      "format": "GGUF · Q2_0",
+      "size_gb": 2.556640128
+    },
+    "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF@e0fecb69cb3e5e4c5e8a056fa2aec98c78e91246": {
+      "format": "GGUF · IQ2_XXS / NVFP4 / Q8_0 (NVIDIA 24 GB)",
+      "size_gb": 23.75
+    },
+    "RedHatAI/Qwen3.8-27B-INT4@bf08f3dbd9a324e53956920aad378a1f1b6dd24a": {
+      "format": "compressed-tensors · W4A16 INT4",
+      "size_gb": 19.47
+    },
+    "deepseek-ai/DeepSeek-V4.1-Flash-1017@1bae0e1088993b9b82de08f59de5be5a34e42170": {
+      "format": "safetensors · FP8 / MXFP4 experts",
+      "size_gb": 510.311
+    }
+  }
+}

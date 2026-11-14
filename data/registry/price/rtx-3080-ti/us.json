@@ -1,0 +1,63 @@
+{
+  "hardware": [
+    {
+      "id": "rtx-3080-ti-12gb",
+      "match_scope": "family"
+    }
+  ],
+  "id": "rtx-3080-ti--us",
+  "observations": [
+    {
+      "amount": 509.99,
+      "condition": "refurbished",
+      "currency": "USD",
+      "in_stock": null,
+      "observed_at": "2026-08-31T12:11:03Z",
+      "quantity": null,
+      "retailer": "microcenter",
+      "title": "GeForce RTX 3080 Ti Founders Edition Dual-Fan 12GB GDDR6X PCIe 4.0 Graphics Card (Refurbished)",
+      "url": "https://www.microcenter.com/product/678195"
+    },
+    {
+      "amount": 1320.0,
+      "condition": "new",
+      "currency": "USD",
+      "in_stock": null,
+      "observed_at": "2026-10-05T12:00:00Z",
+      "quantity": null,
+      "retailer": "newegg",
+      "title": "NVIDIA GeForce RTX 3080 Ti Graphics Card GEFORCE RTX 3080 Ti FE",
+      "url": "https://www.newegg.com/nvidia-geforce-rtx-3080-ti-fe-12gb-graphics-card/p/N82E16814132094"
+    }
+  ],
+  "observed_at": "2026-10-05T12:00:00Z",
+  "product": {
+    "category": "gpu",
+    "id": "rtx-3080-ti",
+    "name": "RTX 3080 ti"
+  },
+  "provenance": {
+    "scanner": "https://claude.ai/code/routines",
+    "snapshot_generated_at": "2026-10-05T10:26:29Z",
+    "source_error_count": 0
+  },
+  "region": {
+    "code": "US",
+    "currency": "USD",
+    "name": "United States"
+  },
+  "schema_version": "local-ai-registry/v1",
+  "summary": {
+    "in_stock_count": 0,
+    "listing_count": 2,
+    "lowest_new": 1320.0,
+    "lowest_refurbished": 509.99,
+    "lowest_used": null,
+    "retailer_count": 2
+  },
+  "verification": {
+    "method": "scheduled claude cloud routine: live web search, native currency, direct retailer URLs, 0.35x-3x plausibility vs prior lowest-new, merged with prior observations",
+    "rejected_observations": 0,
+    "state": "candidate"
+  }
+}
